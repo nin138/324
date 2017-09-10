@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../public/stylesheets/style2.css">
+    <style>
+      .clearfix:after{display:block;clear:both;height:0;visibility:hidden;content:"."}.clearfix{min-height:1px}
+      body {
+        background: rgba( 230, 230, 230, 1 )
+      }
+      #main {
+        width: calc( 100% - 50px );
+        height: calc( 100% - 50px - 50px );
+        background: #fff;
+        margin: 25px;
+        border-radius: 10px;
+      }
+      #main #profile {
+        padding: 25px;
+        clear: both;
+      }
+      #icon_space {
+        width: 100px;
+        float: left;
+      }
+      #personal_space {
+        width: calc( 100% - 50px - 50px );
+        float: left;
+        text-align: right;
+      }
+      #inner_icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background: rgba( 230, 230, 230, 1 );
+      }
+      .language {
+        width: 100%;
+        border-top: 1px solid rgba( 230, 230, 230, 1 );
+        padding: 20px 0;
+      }
+      .name {
+        float: left;
+        padding-left: 25px;
+      }
+      .star {
+        font-family: Condense;
+        float: right;
+        padding-right: 25px;
+      }
+      #nav {
+        width: calc( 100% - 50px );
+        padding: 0 25px;
+      }
+      #nav .btn {
+        width: calc( 50% - 5px );
+        background: rgba( 255, 255, 255, 1 );
+        float: left;
+        margin-right: 10px;
+        padding: 20px 0;
+        text-align: center;
+        border-radius: 5px;
+      }
+      #nav .btn:last-child {
+        margin: 0
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="profile" class="clearfix">
+        <div id="icon_space">
+          <div id="icon">
+            <!-- <img src=""> -->
+            <div id="inner_icon"></div>
+          </div>
+        </div>
+        <div id="personal_space">
+          <div id="name">名前</div>
+          <div id="station">駅</div>
+        </div>
+      </div>
+      <div id="languages">
+        <div class="language clearfix">
+          <div class="name">A</div>
+          <div class="star">–––––</div>
+        </div>
+        <div class="language clearfix">
+          <div class="name">A</div>
+          <div class="star">–––––</div>
+        </div>
+        <div class="language clearfix">
+          <div class="name">A</div>
+          <div class="star">–––––</div>
+        </div>
+        <div class="language clearfix">
+          <div class="name">A</div>
+          <div class="star">–––––</div>
+        </div>
+        <div class="language clearfix">
+          <div class="name">A</div>
+          <div class="star">–––––</div>
+        </div>
+      </div>
+    </div>
+    <div id="nav" class="clearfix">
+      <div class="btn">承認する</div>
+      <div class="btn">承認しない</div>
+    </div>
+  </body>
+
+</html>
