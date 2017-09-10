@@ -47,12 +47,25 @@ router.get('/profile', function(req, res, next) {
             user.hash = word;
 
             console.log("regist to DB");
-            // user.save(function(err){
-            //     if(err)console.log(err); 
-                   
-            // });
-
             
+
+
+            var profile = {
+              name: "徹",
+              place: 'Tokyo',
+              word: "テスト〜",
+              lang: { 
+                javascript: '3',
+                java: '5',
+                python: '2'
+              }
+
+            }
+                
+
+            var profileJSON = JSON.stringify(profile);
+
+            res.send(profileJSON);
             res.redirect('/index');    
         }else{
             console.log("Already registrated");
@@ -81,7 +94,7 @@ router.get('/ichiran', function(req, res, next) {
 
     var username = req.body.username;
     var userid = req.body.userid;
-    var password = req.body.place
+    var password = req.body.place;
     var hash = req.body.word;
 
     User.find({ "userid" : userid }, function(err, result){
@@ -95,10 +108,19 @@ router.get('/ichiran', function(req, res, next) {
             user.hash = word;
 
             console.log("regist to DB");
-            // user.save(function(err){
-            //     if(err)console.log(err); 
-                   
-            // });
+
+
+            var engineer = [
+                { name: 'Dave', place: 'Atlanta', lang: 'java', rank: '3', word: "テスト" },
+                { name: "徹", place: 'Tokyo', lang: 'java', rank: '5', word: "テスト2"  },
+                { name: '金子', place: 'Osaka', lang: 'java', rank: '2', word: "テスト1" }
+            ];
+
+            var engineerJSON = JSON.stringify(engineer);
+
+            res.send(engineerJSON);
+            res.render('index', { Hello: 'Express' });
+           
 
             
             res.redirect('/index');    
