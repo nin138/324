@@ -1,7 +1,21 @@
-$deep-green = #5ecc71;
-$light-green = #5ecc71;
+$deep_green: #5ecc71;
+$light_green: #dbfcde;
+body {
+  background: $light_green;
+}
+
 
 .header {
+  background: #fff;
+  &__logo {
+    background: $deep_green;
+    height: 3rem;
+    & img {
+      display: block;
+      margin: 0 auto;
+      height: 2.5rem;
+    }
+  }
   &__lang-area {
     display: flex;
     &__select {
@@ -14,7 +28,7 @@ $light-green = #5ecc71;
       margin: 10px;
       border: solid;
       color: #fff;
-      background: $deep-green;
+      background: $deep_green;
     }
   }
   &__star-area {
@@ -32,6 +46,6 @@ $light-green = #5ecc71;
     }
   }
   #star1:checked + *,#star2:checked + *,#star3:checked + *,#star4:checked + *,#star5:checked + * {
-    background: #f00;
+    background: $deep_green;
   }
 }
