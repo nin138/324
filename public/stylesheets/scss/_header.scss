@@ -1,3 +1,6 @@
+$deep-green = #5ecc71;
+$light-green = #5ecc71;
+
 .header {
   &__lang-area {
     display: flex;
@@ -11,7 +14,7 @@
       margin: 10px;
       border: solid;
       color: #fff;
-      background: #5ecc71;
+      background: $deep-green;
     }
   }
   &__star-area {
