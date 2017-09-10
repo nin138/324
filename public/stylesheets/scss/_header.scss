@@ -1,0 +1,31 @@
+.header {
+  &__lang-area {
+    display: flex;
+    &__select {
+      flex: 3;
+      font-size: 3rem;
+    }
+    &__search {
+      flex: 1;
+      border: solid;
+      font-size: 3rem;
+    }
+  }
+  &__star-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    & input {
+      display: none;
+    }
+    &__label {
+      text-align: center;
+      border: solid;
+      display: block;
+      flex: 1;
+    }
+  }
+  #star1:checked + *,#star2:checked + *,#star3:checked + *,#star4:checked + *,#star5:checked + * {
+    background: #f00;
+  }
+}

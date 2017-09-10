@@ -104,4 +104,34 @@ ul, ol {
   list-style: none;
 }
 
+.header__lang-area {
+  display: flex;
+}
+.header__lang-area__select {
+  flex: 3;
+  font-size: 3rem;
+}
+.header__lang-area__search {
+  flex: 1;
+  border: solid;
+  font-size: 3rem;
+}
+.header__star-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.header__star-area input {
+  display: none;
+}
+.header__star-area__label {
+  text-align: center;
+  border: solid;
+  display: block;
+  flex: 1;
+}
+.header #star1:checked + *, .header #star2:checked + *, .header #star3:checked + *, .header #star4:checked + *, .header #star5:checked + * {
+  background: #f00;
+}
+
 /*# sourceMappingURL=style2.css.map */
