@@ -3,12 +3,15 @@
     display: flex;
     &__select {
       flex: 3;
-      font-size: 3rem;
+      margin: 10px;
+      border: solid;
     }
     &__search {
       flex: 1;
+      margin: 10px;
       border: solid;
-      font-size: 3rem;
+      color: #fff;
+      background: #5ecc71;
     }
   }
   &__star-area {
