@@ -61,8 +61,6 @@ router.get('/profile', function(req, res, next) {
               }
 
             }
-                
-
             var profileJSON = JSON.stringify(profile);
 
             res.send(profileJSON);
