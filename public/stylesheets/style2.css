@@ -104,4 +104,86 @@ ul, ol {
   list-style: none;
 }
 
+body {
+  background: #dbfcde;
+}
+
+.header {
+  background: #fff;
+}
+.header__logo {
+  background: #5ecc71;
+  height: 3rem;
+}
+.header__logo img {
+  display: block;
+  margin: 0 auto;
+  height: 2.5rem;
+}
+.header__lang-area {
+  display: flex;
+}
+.header__lang-area__select {
+  flex: 3;
+  margin: 10px;
+  border: solid;
+}
+.header__lang-area__search {
+  flex: 1;
+  margin: 10px;
+  border: solid;
+  color: #fff;
+  background: #5ecc71;
+}
+.header__star-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.header__star-area input {
+  display: none;
+}
+.header__star-area__label {
+  text-align: center;
+  border: solid 1px #777;
+  display: block;
+  flex: 1;
+}
+.header #star1:checked + *, .header #star2:checked + *, .header #star3:checked + *, .header #star4:checked + *, .header #star5:checked + * {
+  background: #5ecc71;
+}
+
+.c-list {
+  overflow-y: scroll;
+  height: 65vh;
+  background: #fff;
+}
+.c-list__item {
+  display: flex;
+  border-top: solid;
+  border-bottom: solid;
+  margin: .5rem 0 .5rem;
+  padding: .5rem;
+}
+.c-list__item__thumbnail {
+  width: 100px;
+  height: 100px;
+  border: solid;
+  border-radius: 50%;
+}
+.c-list__item__right {
+  flex: 1;
+}
+.c-list__item__right__top {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-between;
+}
+.c-list__item__right__bottom {
+  display: flex;
+  height: 60%;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=style2.css.map */

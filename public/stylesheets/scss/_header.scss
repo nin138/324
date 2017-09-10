@@ -1,0 +1,51 @@
+$deep_green: #5ecc71;
+$light_green: #dbfcde;
+body {
+  background: $light_green;
+}
+
+
+.header {
+  background: #fff;
+  &__logo {
+    background: $deep_green;
+    height: 3rem;
+    & img {
+      display: block;
+      margin: 0 auto;
+      height: 2.5rem;
+    }
+  }
+  &__lang-area {
+    display: flex;
+    &__select {
+      flex: 3;
+      margin: 10px;
+      border: solid;
+    }
+    &__search {
+      flex: 1;
+      margin: 10px;
+      border: solid;
+      color: #fff;
+      background: $deep_green;
+    }
+  }
+  &__star-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    & input {
+      display: none;
+    }
+    &__label {
+      text-align: center;
+      border: solid 1px #777;
+      display: block;
+      flex: 1;
+    }
+  }
+  #star1:checked + *,#star2:checked + *,#star3:checked + *,#star4:checked + *,#star5:checked + * {
+    background: $deep_green;
+  }
+}

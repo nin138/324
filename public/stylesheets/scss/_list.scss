@@ -1,0 +1,32 @@
+.c-list {
+  overflow-y: scroll;
+  height: 65vh;
+  background: #fff;
+  &__item {
+    display: flex;
+    border-top: solid;
+    border-bottom: solid;
+    margin: .5rem 0 .5rem;
+    padding: .5rem;
+    &__thumbnail {
+      width: 100px;
+      height: 100px;
+      border: solid;
+      border-radius: 50%;
+    }
+    &__right {
+      flex: 1;
+      &__top {
+        display: flex;
+        font-size: 2rem;
+        justify-content: space-between;
+      }
+      &__bottom {
+        display: flex;
+        height: 60%;
+        align-items: flex-end;
+        justify-content: space-between;
+      }
+    }
+  }
+}
