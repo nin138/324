@@ -1,0 +1,25 @@
+.c-list {
+  &__item {
+    display: flex;
+    border-top: solid;
+    border-bottom: solid;
+    &__thumbnail {
+      width: 100px;
+      height: 100px;
+      border: solid;
+      border-radius: 50%;
+    }
+    &__right {
+      flex: 1;
+      &__top {
+        display: flex;
+        font-size: 2rem;
+        justify-content: space-between;
+      }
+      &__bottom {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
